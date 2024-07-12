@@ -1,0 +1,330 @@
+#education {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#education h5 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#education h2 {
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+}
+
+.education__container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slick-slide {
+    display: block; /* Ensure slides are displayed */
+    width: 100%; /* Set a specific width */
+}
+
+.slick-slide img {
+    width: 100%; /* Ensure images cover the slide */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Improve the visibility and style of navigation arrows */
+.slick-prev, .slick-next {
+    background-color: var(--color-primary); /* Semi-transparent black background */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 99; /* Ensure arrows are above other content */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 25px; /* Increase arrow size */
+    color: var(--color-primary-variant); /* Change arrow color to white */
+    opacity: 1; /* Make arrow fully opaque */
+}
+
+/* Adjust the position of the arrows slightly */
+.slick-prev {
+    left: 10px; /* Move slightly to the right from the edge */
+}
+
+.slick-next {
+    right: 10px; /* Move slightly to the left from the edge */
+}
+
+/* Add hover effect to arrows for better interactivity */
+.slick-prev:hover, .slick-next:hover {
+    background-color: var(--color-bg-variant); /* Darken background on hover */
+}
+
+/* Enhance the dots navigation */
+.slick-dots {
+    bottom: 5px; /* Adjust position as needed */
+    list-style: none; /* Remove default list styling */
+}
+
+.slick-dots li {
+    display: inline block; /* Display dots inline */
+    margin: 0 5px; /* Add some space around dots */
+}
+
+.slick-dots li button {
+    font-size: 0; 
+    line-height: 0;
+    display: block;
+    width: 10px; 
+    height: 10px;
+    padding: 5px;
+    cursor: pointer; /* Pointer cursor on hover */
+    color: transparent; /* Hide the default arrow characters */
+    background: var(--color-primary);
+    border-radius: 50%; /* Circular dots */
+}
+
+.slick-dots li.slick-active button {
+    background: var(--color-socials-active)
+}
+
+.slick-prev, .slick-next, .slick-dots li button {
+    transition: all 0.3s ease;
+}
+
+.education-logo-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.4rem 2.5rem;
+    transition: var(--transition);
+    border-radius: 2rem;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 1;  /* Ensure containers are visible */
+    transform: translateY(0);  /* Ensure containers are in place */
+}
+
+.education-logo-container:hover h4 {
+    color: var(--color-socials-active);
+}
+
+.logo-and-name {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    width: 100%; /* Ensure it takes full width for proper centering */
+}
+
+.logo-and-name img {
+    margin-bottom: 1rem; /* Maintain space between the logo and the name */
+    display: block;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo-and-name img:hover {
+    transform: rotate(20deg) scale(1.3);
+}
+
+.logo-and-name h3 {
+    margin: 0;
+}
+
+.logo-and-name h3 a {
+    color: var(--color-primary);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.logo-and-name h3 a:hover {
+    color: var(--color-primary);
+}
+
+.logo-and-name h3 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+.logo-and-name h3 a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--color-primary);
+}
+
+.education__1 h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.certification {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem 2.3rem;
+    transition: var(--transition);
+    border-radius: 2rem;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 1;  /* Ensure containers are visible */
+    transform: translateY(0);  /* Ensure containers are in place */
+}
+
+.certification h3 {
+    margin-bottom: 2rem;
+}
+
+.certification a {
+    color: var(--color-primary);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.certification a:hover {
+    color: var(--color-primary);
+}
+
+.certification a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+.certification a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--color-primary);
+}
+
+.certification img:hover {
+    transform: rotate(20deg) scale(1.3);
+}
+
+.education__content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education__content li {
+    margin-bottom: 1rem;
+}
+
+.logo-name-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text inside the container is centered */
+}
+
+.logo-name-container img {
+    width: 40px;
+    margin-right: 2rem;
+}
+
+.logo-name-container a {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+    .education__container .slick-prev,
+    .education__container .slick-next {
+        font-size: 20px; /* Slightly smaller arrows */
+        left: 90%; /* Adjust position for prev arrow */
+        right: 0px; /* Adjust position for next arrow */
+    }
+
+    .education__container .slick-prev {
+        left: 10px; /* Adjust left arrow position for better visibility */
+    }
+
+    .education__container .slick-next {
+        right: 10px; /* Adjust right arrow position for better visibility */
+    }
+
+    .education__container .education-logo-container,
+    .education__container .certification {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .education__container .logo-and-name img {
+        max-width: 80px; /* Smaller logos */
+    }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .education__container .slick-prev,
+    .education__container .slick-next {
+        font-size: 8px; /* Smaller arrows for limited space */
+        width: 8px; /* Smaller hit area */
+        height: 8px; /* Maintain aspect ratio */
+    }
+
+    .education__container .slick-prev {
+        left: 5px; /* Closer to the edge for space efficiency */
+    }
+
+    .education__container .slick-next {
+        right: 5px; /* Closer to the edge for space efficiency */
+    }
+
+    .education__container .education-logo-container,
+    .education__container .certification {
+        padding: 10px 30px 5rem; /* Reduced padding for more content space */
+    }
+
+    .education__container .logo-and-name img {
+        max-width: 30px; /* Smaller logos for space efficiency */
+    }
+
+    .certification img {
+        max-width: 30px; /* Smaller certification images */
+    }
+
+    .education__container .slick-dots {
+        bottom: 0; /* Adjust position to avoid overlap with content */
+    }
+
+    .education__container .slick-dots li button {
+        width: 6px; /* Smaller dots */
+        height: 6px; /* Smaller dots */
+    }
+
+    /* Adjust font sizes for readability on small screens */
+    .education__container .education__content h2,
+    .education__container .education__content p {
+        font-size: 10px; /* Smaller font sizes for headings and paragraphs */
+    }
+}
+/* Keyframes for animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

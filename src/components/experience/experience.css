@@ -1,0 +1,100 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div {
+    background: transparent;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    border-color: var(--color-primary);
+}
+
+/* .experience__container > div:nth-child(1) {
+    
+} */
+
+.experience__container > div h3 {
+    text-align: center;
+    margin: 0 0 2rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: underline 0.2rem;
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.experience__content h4 {
+    margin-bottom: 1rem;
+    color: var(--color-primary-variant);
+}
+
+.experience__container > div:hover {
+    background: linear-gradient(135deg, var(--color-primary-variant), transparent);
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 30px var(--color-primary);
+    transform: translateY(-5px) scale(1.05);
+    transition: var(--transition);
+    cursor: default;
+}
+
+.experience__1 > h3:hover {
+    background: linear-gradient(135deg, var(--color-primary), transparent);
+    border-radius: 2rem;
+}
+
+
+.experience__container > div:hover h4 {
+    color: var(--color-socials-active);
+}
+
+.experience__content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience__content ul li {
+    margin-bottom: 1rem; /* Adds space between list items */
+    padding-left: 1.5rem; /* Adds padding for a custom list marker or indentation */
+    position: relative; /* Allows absolute positioning of the custom list marker */
+}
+
+.experience__content ul li::before {
+    content: '•'; /* Custom list marker */
+    color: var(--color-primary); /* Marker color */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* media queries for tablets */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+    .experience__container > div {
+        padding: 2.4rem 2.5rem;
+    }
+}
+
+/* media queries for small devices */
+@media screen and (max-width: 600px) {
+
+    .experience__container > div {
+        padding: 2.4rem 2.5rem;
+    }
+
+    .experience__container > div:hover {
+        background: linear-gradient(25deg, var(--color-primary-variant), transparent);
+        box-shadow: 0 10px 20px var(--color-primary);
+        transform: translateY(-3px) scale(1.03);
+    }
+
+}
