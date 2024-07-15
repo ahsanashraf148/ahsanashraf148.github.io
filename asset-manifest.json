@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.992a4d7b.css",
+    "main.js": "/static/js/main.3a2f3cb5.js",
+    "static/media/me.png": "/static/media/me.fd6d7d0a87063d8851fd.png",
+    "static/media/Ahsan-Ashraf-Resume.pdf": "/static/media/Ahsan-Ashraf-Resume.cd8257b4369db8fddc3d.pdf",
+    "static/media/ucs.png": "/static/media/ucs.68eba99a70be68b2c7a9.png",
+    "static/media/fast.png": "/static/media/fast.4c0caf42be465aaa75cb.png",
+    "static/media/adamjee.png": "/static/media/adamjee.245f695dad26033627a7.png",
+    "static/media/ahsan5.jpg": "/static/media/ahsan5.8edadf9fbfd039dc1db4.jpg",
+    "static/media/deeplearning.png": "/static/media/deeplearning.ab21dd0d58584f4dc94e.png",
+    "static/media/meta.png": "/static/media/meta.b1cf8b11dd8b0c511c77.png",
+    "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.992a4d7b.css.map": "/static/css/main.992a4d7b.css.map",
+    "main.3a2f3cb5.js.map": "/static/js/main.3a2f3cb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.992a4d7b.css",
+    "static/js/main.3a2f3cb5.js"
+  ]
+}
