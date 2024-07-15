@@ -1,2 +1,2 @@
 # Ahsan Ashraf portfolio
-## Created using React and CSS
+## Created using `React` and `CSS`
