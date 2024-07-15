@@ -2,7 +2,7 @@ nav {
     background :blur(10px);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 0.3rem 1.2rem;
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -12,6 +12,7 @@ nav {
     backdrop-filter: blur(15px);
     display: flex;
     gap: 0.8rem;
+    box-shadow: 0 15px 30px var(--color-primary);
 }
 
 nav a {
@@ -19,7 +20,7 @@ nav a {
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-primary);
+    color: var(--color-primary-variant);
     font-size: 150%;
 }
 
